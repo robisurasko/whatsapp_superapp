@@ -1,0 +1,7 @@
+recursive-include whatsapp_superapp *.json
+recursive-include whatsapp_superapp *.py
+recursive-include whatsapp_superapp *.js
+recursive-include whatsapp_superapp *.vue
+recursive-include whatsapp_superapp *.html
+recursive-include whatsapp_superapp *.md
+recursive-exclude * *.pyc
