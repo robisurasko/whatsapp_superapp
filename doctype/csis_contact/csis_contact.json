@@ -1,0 +1,42 @@
+{
+    "doctype": "DocType",
+    "name": "CSIS Contact",
+    "module": "Whatsapp Superapp",
+    "custom": false,
+    "fields": [
+        {
+            "fieldname": "full_name",
+            "label": "Full Name",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "phone",
+            "label": "Phone",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "waba_id",
+            "label": "WABA ID",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "linked_messages",
+            "label": "Linked Messages",
+            "fieldtype": "Table",
+            "options": "CSIS Whatsapp Message"
+        },
+        {
+            "fieldname": "tags",
+            "label": "Tags",
+            "fieldtype": "Data"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

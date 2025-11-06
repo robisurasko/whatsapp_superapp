@@ -1,0 +1,38 @@
+{
+    "doctype": "DocType",
+    "name": "CSIS Whatsapp Template",
+    "module": "Whatsapp Superapp",
+    "custom": false,
+    "fields": [
+        {
+            "fieldname": "template_name",
+            "label": "Template Name",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "language",
+            "label": "Language",
+            "fieldtype": "Data",
+            "default": "en"
+        },
+        {
+            "fieldname": "category",
+            "label": "Category",
+            "fieldtype": "Select",
+            "options": "Transactional\\nMarketing\\nOTP"
+        },
+        {
+            "fieldname": "content",
+            "label": "Content",
+            "fieldtype": "Text"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

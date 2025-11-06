@@ -1,0 +1,65 @@
+{
+    "doctype": "DocType",
+    "name": "CSIS Whatsapp Message",
+    "module": "Whatsapp Superapp",
+    "custom": false,
+    "fields": [
+        {
+            "fieldname": "message_id",
+            "label": "Message ID",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "conversation",
+            "label": "Conversation",
+            "fieldtype": "Link",
+            "options": "CSIS Whatsapp Conversation"
+        },
+        {
+            "fieldname": "contact",
+            "label": "Contact",
+            "fieldtype": "Link",
+            "options": "CSIS Contact"
+        },
+        {
+            "fieldname": "direction",
+            "label": "Direction",
+            "fieldtype": "Select",
+            "options": "Incoming\\nOutgoing"
+        },
+        {
+            "fieldname": "content_type",
+            "label": "Content Type",
+            "fieldtype": "Data",
+            "default": "text"
+        },
+        {
+            "fieldname": "message",
+            "label": "Message",
+            "fieldtype": "Text"
+        },
+        {
+            "fieldname": "sent_at",
+            "label": "Sent At",
+            "fieldtype": "Datetime"
+        },
+        {
+            "fieldname": "is_template",
+            "label": "Is Template",
+            "fieldtype": "Check"
+        },
+        {
+            "fieldname": "template_name",
+            "label": "Template Name",
+            "fieldtype": "Data"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

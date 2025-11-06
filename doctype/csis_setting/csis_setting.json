@@ -1,0 +1,31 @@
+{
+    "doctype": "DocType",
+    "name": "CSIS Setting",
+    "module": "Whatsapp Superapp",
+    "custom": false,
+    "fields": [
+        {
+            "fieldname": "waba_id",
+            "label": "WABA ID",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "access_token",
+            "label": "Access Token",
+            "fieldtype": "Password"
+        },
+        {
+            "fieldname": "meta_phone_number_id",
+            "label": "Meta Phone Number ID",
+            "fieldtype": "Data"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}

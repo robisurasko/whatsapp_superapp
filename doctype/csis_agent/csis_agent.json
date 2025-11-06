@@ -1,0 +1,46 @@
+{
+    "doctype": "DocType",
+    "name": "CSIS Agent",
+    "module": "Whatsapp Superapp",
+    "custom": false,
+    "fields": [
+        {
+            "fieldname": "agent_name",
+            "label": "Agent Name",
+            "fieldtype": "Data"
+        },
+        {
+            "fieldname": "user",
+            "label": "User",
+            "fieldtype": "Link",
+            "options": "User"
+        },
+        {
+            "fieldname": "status",
+            "label": "Status",
+            "fieldtype": "Select",
+            "options": "Online\\nBusy\\nOffline",
+            "default": "Offline"
+        },
+        {
+            "fieldname": "role_type",
+            "label": "Role Type",
+            "fieldtype": "Select",
+            "options": "agent\\nmanager",
+            "default": "agent"
+        },
+        {
+            "fieldname": "last_assignment",
+            "label": "Last Assignment",
+            "fieldtype": "Datetime"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1
+        }
+    ]
+}
